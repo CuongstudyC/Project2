@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class report extends Model
+{
+    use HasFactory;
+
+    protected $table = 'reports';
+
+    protected $primaryKey = 'id';
+
+    protected $fillable = [
+        'type',
+        'content',
+        'admin_id',
+    ];
+
+    public function relatedAdmin(){
+        return $this->belongsTo(admin::class, 'admin_id');
+    }
+}

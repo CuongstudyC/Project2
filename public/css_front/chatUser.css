@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.message {
+    font-size: 30px;
+    background-color: #1e90ff;
+    color: white;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    box-shadow: 0 0 10px 3px #c1c3c6;
+    border: solid #1e90ff;
+    border-radius: 50%;
+    padding: 3px 10px;
+    outline: #1e90ff;
+    display:none;
+}
+
+.message .fa-facebook-messenger {
+    padding: 1%;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: solid 2px #eeeeee;
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px 0px #eeeeee;
+    border-radius: 5%;
+    display:none;
+}
+
+.box .name_user {
+    border: solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 60px;
+    background-color:#3742fa;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box .name_user .flex_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .name_user .flex_box .name {
+    margin-top: 10px;
+    padding: 2%;
+}
+
+.box .name_user button {
+    background-color: #ff4757;
+    color: white;
+    border: solid 1px #ff4757;
+    border-radius: 20%;
+    width:30px;
+}
+
+#content-chat {
+    height: 205px;
+    overflow: auto;
+    overflow-y: auto;
+    background-color: #57606f;
+    color:white;
+}
+
+.submit-Chat input {
+    border: #1e90ff solid 2px;
+    border-radius: 20px;
+    padding:2px 2%;
+}
+
+.submit-Chat input:focus {
+    outline: #1e90ff;
+}
+#content-chat div{
+    margin:5px 0;
+    padding-top:3%;
+}
+#content-chat div span{
+    color:white;
+    border:solid 2px;
+    background-color: #1e90ff;
+    border-radius: 20px;
+    padding:1% 3%;
+}
